@@ -1504,6 +1504,22 @@
                 }
               ]
             }
+          },
+          {
+            "PolicyName": "KitchenSinkFunctionRolePolicy56",
+            "PolicyDocument": {
+              "Statement": [
+                {
+                  "Action": [
+                    "apigateway:*"
+                  ],
+                  "Resource": [
+                    "arn:aws:apigateway:${AWS::Region}::/*"
+                  ],
+                  "Effect": "Allow"
+                }
+              ]
+            }
           }
         ], 
         "Tags": [
